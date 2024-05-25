@@ -1,0 +1,7 @@
+@font-face {
+    font-family:ANTON ;
+    src: url(/FONTS/ANTON-REGULAR/Anton-Regular.woff2);
+    font-style: normal;
+    font-weight: 400   600 900;
+    font-display: swap;
+}
