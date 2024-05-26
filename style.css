@@ -5,3 +5,125 @@
     font-weight: 400   600 900;
     font-display: swap;
 }
+body{
+    
+   font-family: ANTON, sans-serif;
+   background-image: url(/image/background/pic3.avif);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  overflow: hidden;
+}
+.nav-box>ul{
+display: flex;
+width: 100vw;
+justify-content: space-around;
+padding: 10px;
+list-style: none;
+position: absolute;
+bottom: 10px;
+}
+.nav-box__list__item{
+    position: relative;
+    background: transparent;
+    box-shadow: 0 0 40px 5px black;
+}
+
+.nav-box__list__item:after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 15%;
+    left: 0;
+    bottom: -2px;
+    border: 1px solid whitesmoke;
+    transition: width .4s ease;
+}
+.nav-box__list__item:hover::after{
+    width: 95%;
+}
+.nav-box__list__item>a{
+    color: aliceblue;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.catalog{
+    width: 100%;
+    height: auto;
+    margin: auto ;
+    
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity .7s ease;
+   
+}
+.catalog__item{
+    min-width: 300px;
+    min-height: auto ;
+    padding: 10px;
+    background-color: rgba(240, 248, 255, 0.322);
+    border: 2px dashed  rgba(0, 0, 0, 0.164);
+    box-shadow: inset 0 0 25px 10px rgba(0, 0, 0, 0.349);
+    display: grid;
+    grid-auto-flow: row; 
+    grid-template-rows: 1fr max-content max-content ;
+    margin: 1%;
+    text-align: center;
+    justify-items: center;
+  
+} 
+.item2 .item3{
+    transform-origin: right;
+    transform: translateX(320%) ;
+    transform-origin:1 1;
+    transform:rotateX(-130deg) ;
+
+}
+.catalog__item h2{
+ margin: 1%;
+ user-select: none;
+}
+/* .catalog__item h2::after
+.catalog__item h2::before{
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    border: 3px solid black;
+    background-color: black;
+} */
+.catalog__item img{
+  width:80% ;
+  height: 80%;
+  
+}
+.catalog__item p{
+    margin: 1%;
+    /* padding: 5px; */
+    line-height: 1.5;
+    
+
+}
+.catalog__item .buy-button{
+    padding: 10px;
+}
+
+
+
+#CATALOG:target{
+    opacity: 1;
+} 
+#CATALOG:target .item2  {
+    transform: translateX(0px);
+    transform:rotateX(0deg) ;
+}
+#CATALOG:target .item3 {
+    transform: translateX(0px);
+    transform:rotateX(0deg) ;
+    
+}
+
