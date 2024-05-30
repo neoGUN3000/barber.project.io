@@ -1,0 +1,41 @@
+
+.holst{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.booking-page{
+    background-color: rgba(87, 87, 87, 0.048);
+    backdrop-filter: blur(1px);
+    width: 1200px;
+    height: 550px;
+    z-index:0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(200%);
+    user-select: none;
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+.booking-page:target{
+    transform: translateX(-50%);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.829),inset 0 0 50px 20px rgba(0, 0, 0, 0.849);
+}
+
+
+
+
+#frame{
+    width:400px;
+    height: 520px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px black ;
+    position: relative;
+}
+
+#opener:checked + #frame{
+    
+}
