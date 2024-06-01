@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detaction" content="telephone=no">
+    <meta name="Author" content="Oleksii Ilchenko">
     <link rel="stylesheet" href="/style of css/reset.css">
     <link rel="stylesheet" href="/style of css/catalog-cards.css">
     <link rel="stylesheet" href="/style of css/booking.css">
@@ -98,13 +100,38 @@
 
         <section id="BOOKING" class="booking-page">
             <form action="" class="booking-form">
-                <div class="map-wraper">
-                        <input type="checkbox" id="opener">
-                        <iframe id="frame" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82278.13862882028!2d-97.2210292!3d49.876424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea7357a346df1f%3A0x8e41d7d6e02e75b3!2sDeer%20Lodge%20Centre!5e0!3m2!1suk!2sca!4v1717013504147!5m2!1suk!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                     <div class="map-container">
+                          <input type="checkbox" id="map__opener">
+                                <label for="map__opener" class="map__section">           
+                                    
+                                    <div class="map"> 
+                                        <div class="custom-map__opener"></div>
+                                        <iframe id="frame"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d82278.13862882028!2d-97.2210292!3d49.876424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52ea7357a346df1f%3A0x8e41d7d6e02e75b3!2sDeer%20Lodge%20Centre!5e0!3m2!1suk!2sca!4v1717013504147!5m2!1suk!2sca" width="1600" height="1450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                        
+                                 </label>
+                     </div>
+         <ul class="schedule">
+            <li class="schedule__cage">Monday <br> <span>from 10am to 6pm</span></li>
+            <li class="schedule__cage">Tuesday  <br> <span>from 10am to 6pm</span></li>
+            <li class="schedule__cage">Wednesday <br> <span>from 10am to 6pm</span></li>
+            <li class="schedule__cage">Thursday <br> <span>from 10am to 6pm</span></li>
+            <li class="schedule__cage">Friday <br> <span>from 10am to 6pm</span></li>
+        </ul>
+    
+                    
+
+
+
+
+
+
+  
+
+                
+                </div>
                 <address class="contact-wraper">
-                    <input type="tel">
-                   
+                    
                 </address>
             </form>
         </section>

@@ -20,11 +20,12 @@ body {
     background-size: cover;
     position: fixed;
     z-index: 0;
-    /* width: 100vw;
-    height: 100vh; */
-   
-
 }
+
+
+
+
+
 p::selection{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
@@ -56,6 +57,7 @@ p::selection{
     position: relative;
     background: transparent;
     box-shadow: 0 0 40px 5px black;
+    z-index: 999;
 }
 
 .nav-box__list__item:after {
@@ -77,6 +79,7 @@ p::selection{
     color: aliceblue;
     font-size: 30px;
     letter-spacing: 4px;
+    z-index: 999;
 }
 #CATALOG:target{
     opacity: 1;
