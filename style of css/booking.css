@@ -6,8 +6,7 @@
 }
 
 .booking-page{
-    background-color: rgba(87, 87, 87, 0.048);
-    backdrop-filter: blur(1px);
+    background: linear-gradient(190deg,rgba(137, 135, 135, 0.68), rgba(255, 255, 255, 0) );
     width: 1200px;
     height: 550px;
     z-index:0;
@@ -18,18 +17,18 @@
     user-select: none;
     border-radius: 20px;
     transition: all .5s ease;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.829),inset 0 0 50px 20px rgba(0, 0, 0, 0.849);
 }
 .booking-page:target{
     transform: translateX(-50%);
-    backdrop-filter: blur(6px);
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.829),inset 0 0 50px 20px rgba(0, 0, 0, 0.849);
 }
 .booking-form{
     width: inherit;
     height: inherit;
     display: grid;
     padding: 10px;
-    grid-template-columns: repeat(3, 366px);
+    grid-template-columns: repeat(3, 366px) minmax(300px, 500px);
     grid-template-rows:1fr ;
 }
 
@@ -139,7 +138,10 @@ position: absolute;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     z-index:2 ;
-    border:2px solid white;
+    border:2px solid rgb(162, 162, 162);
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    /* border-right-width: 15px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 90px);
@@ -151,46 +153,108 @@ position: absolute;
 .schedule__cage{
     grid-column: 1/3;
     color: aliceblue;
-    font-family: POPPINS;
-    font-size: 16px;
+    font-family: POPPINS, sans-serif;
+    font-size: 20px;
     font-weight: 400;
     width: 100%;
     height: 100%;
     letter-spacing: 2px;
     text-align: center;
-    text-decoration: underline;
+    position: relative;
     transition: all .5s ease;
+    
 }
+
+
 .schedule__cage:hover{
 font-size: 20px;
 font-weight: 600;
+transform: scale(1.1);
 }
 
 .schedule__cage>span{
     margin-top: 15px;
     display: inline-block;
-    
     text-decoration: underline;
+    
+ 
 }
 
 
 
 
 .contact-wraper{
-    background-color:transparent;
-    width: 366px;
-    height: 530px;
-    list-style: none;
-    margin-left: -30px;
     grid-column: 3;
-    border-radius: 20px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    z-index: 1;
-    border:2px solid white;
-    border-left: 0;
- 
+   background-color:transparent;
+   width: 100%;
+   height: 530px;
+   margin-left: -30px;
+   border-radius: 20px;
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+   z-index: 0;
+   border:2px solid rgba(255, 255, 255, 0.452);
+   border-top-width: 3px;
+   border-left :none ;
+   border-bottom-width: 3px;
+
 }
+
+
+.contact-wraper .contact-list {
+    width: 100%;
+   height: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: end;
+    justify-items: end;
+    
+}
+.contact{
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style:normal;
+    font-family: POPPINS, sans-serif;
+    border-bottom: 1px solid ;
+}
+.contact.h2{
+
+    
+    font-family: POPPINS, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 0;
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+.contact-wraper img{
+    width:35px;
+    margin-left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+}
+.contact  p{
+
+}
+.logo{
+    position: absolute;
+    right: 0;
+   transform: rotate(90deg);
+   background-color: aqua;
+   
+}
+
+
 
 
 
