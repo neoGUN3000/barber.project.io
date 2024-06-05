@@ -56,7 +56,6 @@ p::selection{
 .nav-box__list__item {
     position: relative;
     background: transparent;
-    box-shadow: 0 0 40px 5px black;
     z-index: 999;
 }
 
