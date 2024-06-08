@@ -51,11 +51,12 @@ p::selection{
     position: absolute;
     bottom: 10px;
     z-index: 999;
+ 
 }
 
 .nav-box__list__item {
     position: relative;
-    background: transparent;
+   
     z-index: 999;
 }
 
@@ -147,9 +148,6 @@ p::selection{
     scroll-snap-align: center;
     min-height: max-content;
     padding: 25px;
-    position: relative;
-  
-  
 }
 
 
@@ -423,7 +421,11 @@ animation: slider1 30s ease-in-out .5s infinite normal;
 
 /* ____________________REST__OF THE___CONTENT_____ */
 
-
+#nav-menu-opener{
+    visibility: hidden;
+    z-index: 0;
+    opacity: 0;
+}
 
 
 
@@ -474,6 +476,44 @@ animation: slider1 30s ease-in-out .5s infinite normal;
    
 }
 
+.nav-bar-opener{
+    position: fixed;
+    right: 50px;
+    top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all .5s ease;
+}
+.nav-bar-opener::before{
+    content: 'MENU';
+    display: inline-block;
+    font-size: 20px;
+    transform: translateY(-30%);
+    margin-right: 10px;
+    font-family: ANTON;
+    color: aliceblue;
+    position: relative;
+}
+#nav-menu-opener:checked ~ .nav-bar-opener{
+    transform: rotateZ(90deg);
+    right: 10px;top: 10px;
+}
+#nav-menu-opener:checked ~ .nav-bar-opener::before{
+    display: none;
+}
 
+
+.preference-mobile{
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    bottom: 0px;
+    color: aliceblue;
+}
+.preference-mobile li{
+
+}
 
 
