@@ -246,8 +246,8 @@ transform: scale(1.1);
     text-transform: uppercase;
 
 }
-.contact-wraper img{
-    width:35px;
+.contact-wraper svg{
+    width:45px;
     margin-left: 50%;
     margin-top: 10px;
     transform: translateX(-50%);

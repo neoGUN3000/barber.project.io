@@ -504,16 +504,4 @@ animation: slider1 30s ease-in-out .5s infinite normal;
 }
 
 
-.preference-mobile{
-    display: inline-flex;
-    flex-direction: column;
-    list-style: none;
-    position: absolute;
-    bottom: 0px;
-    color: aliceblue;
-}
-.preference-mobile li{
-
-}
-
 
