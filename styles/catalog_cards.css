@@ -14,7 +14,7 @@
 
 body {
     font-family: ANTON, sans-serif;
-    background-image: url(/image/background/im\ main.png);
+    background-image: url(/image/background/im_main.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -391,7 +391,7 @@ border-bottom-right-radius: 20px;
         background-size: cover;
         }
     60%{
-        background-image: url(/image/background/im\ main.png);
+        background-image: url(/image/background/im_main.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
