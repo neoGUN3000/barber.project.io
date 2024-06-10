@@ -370,7 +370,7 @@ border-bottom-right-radius: 20px;
     align-self: center;
     border: 1px solid rgba(245, 245, 245, 0.377);
     box-shadow: 0 0 2px  whitesmoke;
-    background-image: url(/image/background/182693119-lifestyle-photo-barber-shop-blond-boy-customer-hairdresser-man-work-move-hand-comb-tool-scissors.jpg);
+    background-image: url(../image/background/182693119-lifestyle-photo-barber-shop-blond-boy-customer-hairdresser-man-work-move-hand-comb-tool-scissors.jpg);
 }
 
 
@@ -378,32 +378,32 @@ border-bottom-right-radius: 20px;
 
 @keyframes slider1 {
     20%{
-        background-image: url(./image/background/Barbershop.jpg);
+        background-image: url(../image/background/Barbershop.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         
         }
     40%{
-        background-image: url(./image/background/hairdresser-makes-hairstyle-little-boy-barbershop_179493-60.avif);
+        background-image: url(../image/background/hairdresser-makes-hairstyle-little-boy-barbershop_179493-60.avif);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         }
     60%{
-        background-image: url(./image/background/im_main.png);
+        background-image: url(../image/background/im_main.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         }
     80%{
-        background-image: url(./image/background/istockphoto-915640558-170667a.webp);
+        background-image: url(../image/background/istockphoto-915640558-170667a.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         }
     100%{
-        background-image: url(./image/background/pic5.webp);
+        background-image: url(../image/background/pic5.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
