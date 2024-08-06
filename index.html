@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/catalog_cards.css">
     <link rel="stylesheet" href="styles/booking.css">
     <link rel="stylesheet" href="styles/media_catalog.css">
+    <link rel="stylesheet" href="styles/media_booking.css">
     <title>U barber A</title>
 </head>
 <body > 
@@ -17,12 +18,17 @@
 <nav class="nav-box">
     <input type="checkbox" id="nav-menu-opener">
     <label for="nav-menu-opener" class="nav-bar-opener">
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
+        <svg class="opened"  width="25" height="25" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
             <rect y="7" width="30" height="2"/>
             <rect y="15" width="30" height="2"/>
             <rect y="23" width="30" height="2"/>
           </svg>
+          <svg  class="closed"  width="25" height="25" viewBox="0 0 30 30"  xmlns="http://www.w3.org/2000/svg">
+            <line x1="5" y1="5" x2="25" y2="25" stroke="white" stroke-width="2"/>
+            <line x1="25" y1="5" x2="5" y2="25" stroke="white" stroke-width="2"/>
+          </svg>
     </label>
+   
     <ul class="nav-box__list">
         <li  class="nav-box__list__item"><a href="#CATALOG">CATALOG</a></li>
         <li  class="nav-box__list__item"><a href="#BOOKING">BOOKING</a></li>
@@ -146,7 +152,7 @@
                         <li class="contact h2">  <h2>choose your way </h2></li>
                  
                         <li class="contact telegram">
-                            <a  class="social-link " href="https://t.me/Oleksii_90" target="_blank"><p>TELEGRAM</p><svg fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                            <a  class="social-link " href="#" target="_blank"><p>TELEGRAM</p><svg fill="#000000" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="0 0 189.473 189.473" xml:space="preserve">
                            <g>
                                <path d="M152.531,179.476c-1.48,0-2.95-0.438-4.211-1.293l-47.641-32.316l-25.552,18.386c-2.004,1.441-4.587,1.804-6.914,0.972
@@ -198,7 +204,7 @@
 
             
 
-                <a href="#HELP" class="logo"> <h1>  U barber A</h1></a>
+               <div class="logo"> <a href="#HELP" class="logo"> <h1>  U barber A</h1></a></div>
             </form>
         </section>
 

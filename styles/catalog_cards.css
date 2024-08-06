@@ -146,7 +146,7 @@ p::selection{
     box-shadow: inset 0 0 20px black ;  
     position: relative;
     scroll-snap-align: center;
-    min-height: max-content;
+   
     padding: 25px;
 }
 
@@ -284,7 +284,7 @@ border-bottom-right-radius: 20px;
     opacity: 1;
     width: 300px;
     text-align: center;
-    background-color: black;
+    background-color: #00000055;
     padding:15px;
     border: 1px solid rgb(255, 255, 255);
 }
@@ -298,9 +298,9 @@ border-bottom-right-radius: 20px;
     opacity: 1;
     width: 300px;
     text-align: end;
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.333);
     padding: 15px;
-    border: 1px solid rgb(0, 0, 0); 
+    border: 1px solid rgba(255, 255, 255, 0.749); 
 }
 
 
@@ -311,10 +311,10 @@ border-bottom-right-radius: 20px;
     opacity: 1;
     width: 300px;
     text-align: start;
-    background-color: rgba(248, 248, 248, 0.568);
+    background-color: rgba(248, 248, 248, 0.335);
     padding: 15px;
     color: black;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 
@@ -325,9 +325,9 @@ border-bottom-right-radius: 20px;
     opacity: 1;
     width: 300px;
     text-align: end;
-    background-color: rgba(37, 37, 37, 0.493);
+    background-color: rgba(37, 37, 37, 0.333);
     padding: 15px;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid rgba(255, 255, 255, 0.244);
     
 }
 /* 
@@ -373,6 +373,14 @@ border-bottom-right-radius: 20px;
     background-image: url(../image/background/182693119-lifestyle-photo-barber-shop-blond-boy-customer-hairdresser-man-work-move-hand-comb-tool-scissors.jpg);
 }
 
+.child-hair-cut__article .projector
+{
+    background-image: url(../image/background/istockphoto-915640558-170667a.webp);
+}
+.hair-styling__article .projector{
+    background-image: url(../image/background/im_main.png);
+}
+
 
 /* ____________________________________!REGULAR-HAIR-CUT____________________ */
 
@@ -407,6 +415,7 @@ border-bottom-right-radius: 20px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        
         }
 
     
@@ -431,7 +440,7 @@ animation: slider1 30s ease-in-out .5s infinite normal;
 
  .catalog__btn{
     text-align: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     width: 100%;
     height: 100%;
     position: absolute;
@@ -442,7 +451,7 @@ animation: slider1 30s ease-in-out .5s infinite normal;
     height: auto;
     padding: 30px;
     font-size: 20px;
-    box-shadow: 0px 0px 5px 10px rgb(250, 250, 250),inset 0px 0px 50px 30px rgb(255, 255, 255);
+    box-shadow: 0px 0px 20px 5px rgb(250, 250, 250),inset 0px 0px 50px 30px rgb(255, 255, 255);
     transition: all .5s ease;
     }
     .catalog__btn::after{
@@ -477,31 +486,64 @@ animation: slider1 30s ease-in-out .5s infinite normal;
 }
 
 .nav-bar-opener{
+    background-color: rgba(240, 248, 255, 0.518);
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    padding-right: 15px;
     position: fixed;
-    right: 50px;
-    top: 20px;
+    right: 5px;
+    top: 11px;
     visibility: hidden;
     opacity: 0;
     z-index: 0;
     transition: all .5s ease;
 }
+.closed{
+    position: absolute;
+    display: none;
+    margin-left: 15px;
+    right: 0;
+  
+}
 .nav-bar-opener::before{
-    content: 'MENU';
-    display: inline-block;
-    font-size: 20px;
-    transform: translateY(-30%);
-    margin-right: 10px;
-    font-family: ANTON;
-    color: aliceblue;
-    position: relative;
+content: 'menu  ';
+display: inline-block;
+width: 50px;
+text-transform: uppercase;
+padding: 6.2px;
+padding-left: 15px;
+background-color:rgba(240, 248, 255, 0.498);
+border-bottom-left-radius: 0;
+border-top-left-radius: 10%;
+border-bottom-left-radius: 10%;
+position: absolute;
+right: 100%;
 }
 #nav-menu-opener:checked ~ .nav-bar-opener{
-    transform: rotateZ(90deg);
-    right: 10px;top: 10px;
+background-color: transparent;
+
 }
 #nav-menu-opener:checked ~ .nav-bar-opener::before{
     display: none;
 }
+/* 
+#nav-menu-opener:checked ~ .nav-bar-opener{
+    display: none;
+} */
+
+#nav-menu-opener:checked ~ .nav-bar-opener > .opened{
+    visibility:hidden;
+    opacity: 0;
+    z-index:0;
+}
+#nav-menu-opener:checked ~ .nav-bar-opener > .closed{
+   display: inline-block;
+  
+}
+
+
 
 
 
