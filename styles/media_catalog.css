@@ -1,6 +1,39 @@
 @media(max-width:800px){
     .catalog__section{
       width: 100vw;
-      height: max-content;
+      height: auto;
+      overflow-x: hidden;
+      overflow-y: scroll;
     }
+    .nav-box__list{
+    top: 0;
+    max-height: min-content;
+    transform: translateY(-50px);
+    }
+    .nav-bar-opener{
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      z-index: 10;
+      position: absolute;
+      right: 0;
+    
+
+    }
+ 
+    #nav-menu-opener:checked ~ .nav-box__list{
+      transform: translateY(0px);
+   
+      }
+
+      .nav-box__list{
+        transition: .4s;
+      }
+      .hidden{
+        display: none;
+      }
+    .showing{
+      display:inline-block;
+      
+    } 
 }
