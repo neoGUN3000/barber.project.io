@@ -492,7 +492,7 @@ animation: slider1 30s ease-in-out .5s infinite normal;
     transition: all .5s ease;
     }
     .catalog__btn::after{
-        content: url(/image/icons/PUSHER_icon.svg);
+        content: url(../image/icons/PUSHER_icon.svg);
  
     }
     .catalog__btn:hover{
