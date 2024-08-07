@@ -16,9 +16,9 @@
 
     <header>
 <nav class="nav-box">
-    <input type="checkbox" id="nav-menu-opener" >
+    <input type="checkbox" id="nav-menu-opener" checked >
     <label for="nav-menu-opener" class="nav-bar-opener">
-        <svg class="opener"  width="25" height="25" viewBox="0 0 30 30" fill="black" xmlns="http://www.w3.org/2000/svg">
+        <svg class="opener"  width="25" height="25" viewBox="0 0 30 30" fill="white" xmlns="http://www.w3.org/2000/svg">
             <rect y="7" width="30" height="2"/>
             <rect y="15" width="30" height="2"/>
             <rect y="23" width="30" height="2"/>
@@ -30,7 +30,7 @@
     </label>
    
     <ul class="nav-box__list">
-        <li  class="nav-box__list__item"><a href="#CATALOG">CATALOG</a></li>
+        <li  class="nav-box__list__item"><a href="#CATALOG"  >CATALOG</a></li>
         <li  class="nav-box__list__item"><a href="#BOOKING">BOOKING</a></li>
         <li  class="nav-box__list__item"><a href="#HELP">HELP</a></li>
     </ul>
@@ -43,7 +43,10 @@
             <div class="wraper" > 
                 <div class="projector"></div>
                 <h2>REGULAR HAIR CUT</h2>
+                <input type="checkbox" id="text-showing">
+                <label for="text-showing" class="text-showing"><span class="more">show more </span><span  class="less" >show less</span><img src="./image/icons/PUSHER_icon.svg" alt=""></label>
                  <div class="text__wraper">
+                   
                     <p  id="im-special">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta commodi molestiae? Architecto laborum minus deleniti exercitationem accusamus, omnis molestias, mollitia, aut dignissimos vitae dolorum repellendus! Eveniet optio esse sapiente.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem mollitia rerum, possimus totam aspernatur aut ipsam quibusdam iusto ratione, qui atque sunt velit deleniti! Ipsa consequatur blanditiis quod odit?
@@ -66,7 +69,7 @@
                 <li><p>.STYLE.</p></li>
                </ul>
             
-                        <a class="catalog__btn" href="#BOOKING">BOOK IN</a>
+                        <a class="catalog__btn" href="#BOOKING">GET STARTED</a>
             </div>
        
             </article>
@@ -74,6 +77,7 @@
                 <div class="wraper" > 
                     <div class="projector"></div>
                     <h2> CHILD HAIR CUT</h2>
+                   
                    <div class="text__wraper">
                      <p  id="im-special">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo dicta commodi molestiae? Architecto laborum minus deleniti exercitationem accusamus, omnis molestias, mollitia, aut dignissimos vitae dolorum repellendus! Eveniet optio esse sapiente.
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis dolorem mollitia rerum, possimus totam aspernatur aut ipsam quibusdam iusto ratione, qui atque sunt velit deleniti! Ipsa consequatur blanditiis quod odit?
@@ -223,7 +227,7 @@
                     <li><input type="radio" name="help-option" 
                         id="help-option2"class="help-option">
                         <label for="help-option2" class="imposter">
-                            adress & <br> map
+                            adress &  map
                         </label>
                         <div class="help-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet placeat sed adipisci ipsam quia. Exercitationem sequi inventore vel, quae sed fugiat, harum quas culpa eos neque tempora cupiditate non aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, quibusdam soluta. Repellat et dignissimos aliquam quia quae modi reiciendis illo ullam pariatur in, commodi dolorum voluptates laborum soluta aut enim!</div>
                     </li>
@@ -262,7 +266,7 @@
             
                 <textarea class="text__wraper feedbackText" name="feedback" id="feedbackText" cols="100" rows="5" placeholder="enter your feedback"></textarea>
                 <input type="text" placeholder="enter your name" name="getting name" id="gettingName">
-             <button class="sub-btn" type="button">submit</button>
+             <button class="sub-btn" type="submit">submit</button>
             </form>
                     </li>
                 </ul>

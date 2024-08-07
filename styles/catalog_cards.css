@@ -42,7 +42,7 @@ p::selection{
 
 
 /* _____________________MAIN_NAV_MENU___________________________________________________________ */
-.nav-box > ul {
+.nav-box > .nav-box__list {
     display: flex;
     width: 100vw;
     justify-content: space-around;
@@ -55,24 +55,24 @@ p::selection{
 }
 
 .nav-box__list__item {
-    position: relative;
-   
+ 
     z-index: 999;
 }
 
-.nav-box__list__item:after {
+.nav-box__list__item::after{
     content: '';
-    display: inline-block;
-    position: absolute;
-    width: 15%;
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    position: relative;
     left: 0;
-    bottom: -2px;
-    border: 1px solid whitesmoke;
-    transition: all .4s ease;
+    bottom: 0;
+    display: inline-block;
+    transform: scale(0);
+    transition: .4s;
 }
-
-.nav-box__list__item:hover::after {
-    width: 95%;
+.nav-box__list__item:hover::after{
+transform: scale(1);
 }
 
 .nav-box__list__item>a {
@@ -80,6 +80,7 @@ p::selection{
     font-size: 30px;
     letter-spacing: 4px;
     z-index: 999;
+    user-select: none;
 }
 #CATALOG:target{
     opacity: 1;
@@ -89,7 +90,43 @@ p::selection{
 
 
 }
-
+.nav-bar-opener{
+    z-index: 1000;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    }
+    #nav-menu-opener {
+    visibility: hidden;
+    width: 0;
+    position: absolute;
+    
+    
+    }
+    #nav-menu-opener:checked + .nav-bar-opener .opener{
+        display: none;
+    }
+    #nav-menu-opener:checked + .nav-bar-opener .closer{
+        display: inline-block;
+    }
+    .closer{
+        display: none;
+        z-index: 999;
+        border-radius: 50px;  
+         
+    }
+    .opener{
+        display: inline-block;
+        z-index: 999;
+        border-radius: 50px;
+         
+    }
+    
+    
+    
+    
 
 
 
@@ -117,7 +154,7 @@ p::selection{
 .catalog__section {
     width: 1200px;
     height: 550px;
-    max-height: 90%;
+    max-height: 75%;
     background-color: rgba(87, 87, 87, 0.048);
     z-index:0;
     top: 0%;
@@ -128,7 +165,7 @@ p::selection{
     border-radius: 20px;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
-    overflow-y:scroll;
+    overflow-y:visible;
     overflow-x:hidden;
     scroll-snap-type:y mandatory;
     display: flex;
@@ -312,7 +349,7 @@ border-bottom-right-radius: 20px;
     opacity: 1;
     width: 300px;
     text-align: start;
-    background-color: rgba(248, 248, 248, 0.335);
+    background-color: rgb(136, 136, 136);
     padding: 15px;
     color: black;
     border: 1px solid rgba(255, 255, 255, 0.5);
@@ -442,8 +479,7 @@ animation: slider1 30s ease-in-out .5s infinite normal;
  .catalog__btn{
     text-align: center;
     background-color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100%;
+  
     position: absolute;
     display: inline-block;
     bottom:46px;
@@ -483,34 +519,19 @@ animation: slider1 30s ease-in-out .5s infinite normal;
     overflow-y: auto;
     user-select: text;
     font-family: POPPINS;
-   
+   transition: .4s;
 }
-
-.nav-bar-opener{
-background-color: aliceblue;
-display: flex;
-flex-direction: row-reverse;
-
-}
-#nav-menu-opener {
-z-index: -10000;
-visibility: hidden;
-width: 0;
-position: absolute;
-
-
-}
-#nav-menu-opener:checked + .nav-bar-opener .opener{
+.text-showing{
     display: none;
 }
-.closer{
-    display: none;
+#text-showing{
+    position: absolute;
+    left: 0; top: 0;
+    z-index: -1;
+    visibility: hidden;
+    opacity: 0;
+  
 }
-.opener{
-    display: inline-block;
-}
-
-
 
 
 
