@@ -3,10 +3,11 @@
 .booking-page{
     background: linear-gradient(190deg,rgba(137, 135, 135, 0.68), rgba(255, 255, 255, 0) );
     width: 1200px;
+    max-height: 75%;
     height: 550px;
     z-index:0;
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 50%;
     transform: translateX(200%);
     user-select: none;
@@ -19,13 +20,13 @@
     transform: translateX(-50%);
 }
 .booking-form{
-    width: inherit;
-    height: inherit;
+ 
+    max-height: 75%;
     display: grid;
-    row-gap: 30px;
-    padding: 10px;
+ 
+
     grid-template-columns: repeat(3, 366px) minmax(300px, 500px);
-    grid-template-rows:1fr ;
+
 }
 
 
@@ -36,17 +37,16 @@
 .map{
     --map-is-closed:366px;
     width: var(--map-is-closed);
-    height: 530px;
+   
+    height: 530px; 
+    max-height: 90%;
     border-radius: 20px;
     position: relative;
     z-index: 3;
     grid-column: 1;
     transition: all 1s ease;
     overflow: hidden;
-    border:2px solid white;
-  
-
-   
+    border:2px solid white;   
 }
 
 .custom-map__opener::after{
@@ -121,9 +121,9 @@ position: absolute;
 
 .schedule{
     width: 366px;
-    height: 530px;
+    max-height: 90%;
     list-style: none;
-    background-color: transparent;
+     
     margin-left: -15px;
     grid-column: 2;
     border-radius: 20px;
@@ -137,7 +137,7 @@ position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 90px);
-    gap: 20px ;
+    
     padding: 15px;
     align-items: center;
     justify-items:center ;
@@ -160,7 +160,6 @@ position: absolute;
 
 .schedule__cage:hover{
 font-size: 20px;
-font-weight: 600;
 transform: scale(1.1);
 }
 
@@ -179,7 +178,7 @@ transform: scale(1.1);
     grid-column: 3;
    background-color:transparent;
    width: 100%;
-   height: 530px;
+   max-height: 90%;
    margin-left: -30px;
    border-radius: 20px;
    border-top-left-radius: 0;
@@ -224,8 +223,9 @@ transform: scale(1.1);
 .contact:hover 
 {
    background-color: rgba(0, 0, 0, 0.442);
-   box-shadow: inset 0 0 100px 10px rgba(0, 0, 0, 0.429);
+
 }
+
 .contact.h2{
 
     
@@ -254,8 +254,7 @@ transform: scale(1.1);
     position: absolute;
     right: 0;
     display: flex;
-  
-   
+    
 }
 
 
@@ -264,14 +263,15 @@ transform: scale(1.1);
     letter-spacing: 3px;
     height: max-content;
     writing-mode: vertical-lr;
-    font-size: 70px;
+    font-size: 90px;
     transform: scale(-1);
-    background: rgb(255,255,255);
-    background: linear-gradient(93deg, rgb(255, 255, 255) 0%, rgba(0,0,0,1) 100%);
-    background-size: 200% 200%;
-   text-align: center;
+   margin: 0px 0% 65% 10px;
    align-self: center;
-  
+    
+   background: linear-gradient(-90deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
+   color: aliceblue;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 
 
@@ -284,7 +284,7 @@ transform: scale(1.1);
     height: 550px;
     z-index:0;
     position: absolute;
-    top: 10%;
+    top: 0%;
     left: 50%;
     transform: translateX(200%);
     user-select: none;
@@ -306,32 +306,49 @@ transform: scale(1.1);
     transform: translateX(-50%);
    
 }
-.help-option{
+:is(#help-option1, #help-option2, #help-option3, #help-option4, #help-option5 ){
     z-index: 0;
     opacity: 0;
     visibility: hidden;
 
 }
+:is(#help-option1, #help-option2, #help-option3, #help-option4, #help-option5 ):checked + .imposter{
+ color:goldenrod;
+}
 .help__section :is(h2, p){
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
-    
+    color: aliceblue;
 }
 
 
 .topics{
     width: 100%;
     height: 250px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
     list-style: none;
     justify-items: center;
     align-content: center;
     align-items: center;
-    margin-top: -11%;
+    position: absolute;
+}
+.topics li {
+    font-size: 16px;
+}
+.imposter{
+  
+    color: blue;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 16px;
+    color: aliceblue;
+    text-transform: uppercase;   
+    cursor: pointer;
+   
+   
 }
 
 
@@ -342,25 +359,33 @@ transform: scale(1.1);
     justify-items: center;
     align-items: center;
     align-content: center;
-    padding: 15px;
-width: 100%;
-height: 390px;
-position: absolute;
-left: 0;
- margin-top: 20px;
- text-align: center;
- font-size: 20px;
-overflow-y:scroll;
-line-height: 20px;
- user-select: text;
- box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.829),inset 0 0 50px 40px rgba(0, 0, 0, 0.849);
- transform: rotateX(100%);
- visibility: hidden;
- opacity: 0;
- z-index: 0;
- transition: all .5s ease;
-
+    padding: 25px;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    left: 0;
+    top: 70%; 
+    text-align: center;
+    overflow-y: scroll;
+    line-height: 20px;
+    user-select: text;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.829),inset 0 0 50px 40px rgba(0, 0, 0, 0.849);
+    transform: rotateX(100%);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all .5s ease;
+ 
 }
+.help-option:checked ~ .help-content{
+    color: aliceblue;
+    transform: rotateX(0);
+     visibility: visible;
+    opacity: 1;
+    z-index: 10;
+}
+
+
 
 
 .help-content::selection{
@@ -382,25 +407,72 @@ line-height: 20px;
     cursor: grab;
 }
 
-.help-option:checked ~ .help-content{
-    color: aliceblue;
-    transform: rotateX(0);
-     visibility: visible;
-    opacity: 1;
-    z-index: 10;
+
+.leave-feedback__form{
+    width: 100%;
+    padding: 10px;
+
 }
-.imposter{
-    width: 200px;
-    height: 100px;
-    color: blue;
-    text-decoration: underline;
+
+
+.feedbackText{
     text-align: center;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;   
-    cursor: pointer;
-   
-   
+    position: relative;
+    bottom: 20%;
+    left: 0%;
+    width: 500px;
+    max-height: 80%;  
+    text-transform: uppercase;  
+    box-shadow: none;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius:10px 20px 10px 20px ;
+    resize: none;
+}
+.feedbackText::placeholder{
+color: goldenrod;
+}
+#gettingName{
+width: 500px;
+position:absolute;
+top: 65%;
+padding: 10px;
+text-align: center;
+border-radius:10px 20px 10px 20px ;
+
+
+
+}
+#gettingName::placeholder{
+    color: goldenrod;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.sub-btn{
+    width: 500px;
+    position: absolute;
+    padding: 10px;
+    border-radius:10px 20px 10px 20px ;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 16px;
+    transition: .4s;
+}
+.sub-btn:hover{
+background-color: goldenrod;
+color: whitesmoke;
+}
+#gettingName{
+  
+}
+.leave-feedback__form h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 

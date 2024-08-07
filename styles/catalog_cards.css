@@ -42,7 +42,7 @@ p::selection{
 
 
 /* _____________________MAIN_NAV_MENU___________________________________________________________ */
-.nav-box>ul {
+.nav-box > ul {
     display: flex;
     width: 100vw;
     justify-content: space-around;
@@ -117,9 +117,10 @@ p::selection{
 .catalog__section {
     width: 1200px;
     height: 550px;
+    max-height: 90%;
     background-color: rgba(87, 87, 87, 0.048);
     z-index:0;
-    top: 10%;
+    top: 0%;
     left: 50%;
     transform: translateX(200%);
     position: absolute;
