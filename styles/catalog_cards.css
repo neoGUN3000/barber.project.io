@@ -532,7 +532,9 @@ animation: slider1 30s ease-in-out .5s infinite normal;
     opacity: 0;
   
 }
-
+.nav-bar-opener{
+    display: none;
+}
 
 
 
