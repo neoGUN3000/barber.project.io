@@ -155,7 +155,7 @@ z-index: -1;
       top: 100%;
       left: -30px;
       color: aliceblue;border: 1px solid white;
-      width:max-content;
+      width:120px;
      
       padding: 5px 15px;
       background-color: gray;
@@ -226,7 +226,7 @@ margin-left:5px;
     padding: 40px  ;
   }
   .catalog__btn::before{
-    content: 'to get oder press button below';
+    content: 'to make appointment  press button below';
     position: absolute;
     inset: 0px 0px -260px 0px ;
     color: rgb(255, 255, 255);
