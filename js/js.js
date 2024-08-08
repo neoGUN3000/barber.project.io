@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.location.hash = '#CATALOG'
+    window.location.hash = '#BOOKING'
 } )

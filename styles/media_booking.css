@@ -1,0 +1,42 @@
+@media  (max-width: 800px) {
+    
+    body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    
+    .booking-page{
+        width: 100vw;
+        min-height: 1500px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding: 10px 20px;
+    }
+    .booking-form{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    display: flex;
+    gap: 10px;
+    flex-direction: column-reverse;
+        row-gap: 20px;
+
+    }
+    .map{
+        height: 100px;
+        padding: 10px;
+  
+
+    }
+    .schedule{
+
+     
+        margin: auto;
+        width: 90%;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+       
+    }
+    .contact-wraper{
+   
+    }
+}
