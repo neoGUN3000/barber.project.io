@@ -22,11 +22,7 @@
     transform: translateX(-50%);
 }
 .booking-form{
- 
-   
     display: grid;
- 
-
     grid-template-columns: repeat(3, 366px) minmax(300px, 500px);
 
 }
@@ -75,7 +71,6 @@
 
 
 .map__section:hover >.map >.custom-map__opener::after{
-
    display: inline-block;
     visibility: visible;
     opacity: 1;
@@ -510,7 +505,9 @@ color: whitesmoke;
 
 
 
-
+.recomendation-list{
+    display: none;
+}
 
 
 
