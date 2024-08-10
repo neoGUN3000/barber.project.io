@@ -109,7 +109,7 @@
      transform: translateY(0);
     background-color: transparent;
     margin-left: 10px;
- 
+      transition: .0s;
     }
     .catalog__section:target .preference li:first-child{
       transform: translateY(0%);
@@ -124,6 +124,7 @@
       background-color: transparent;
       border: none;
       color: rgb(209, 207, 207);
+      
     }
     .catalog__section:target .preference li:nth-child(3){
       display: none;
@@ -162,12 +163,12 @@
       z-index: 111;
       flex-direction: row;
       flex-wrap: nowrap;
-      width: ; height: max-content;
+      height: max-content;
       position: absolute;
-      top: 108%;
+      top: 100%;
       left: -30px;
       color: aliceblue;border: 1px solid white;
-     font-size: 16px;
+      font-size: 16px;
       padding: 5px 15px;
       background-color: gray;
       border-radius:0px 20px 20px 0px  ;

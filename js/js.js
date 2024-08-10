@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.location.hash = '#CATALOG'
+    window.location.hash = '#BOOKING'
 } );
 document.addEventListener('DOMContentLoaded', () => {
     const targetScroll = document.querySelector('.contact-wraper');
@@ -19,7 +19,43 @@ document.addEventListener('DOMContentLoaded', () => {
     })
       
 
-    } )
+
+
+
+    function distanceBetween(elementTT){
+        const gettinElement = elementTT.getBoundingClientRect();
+        const windheight = window.innerHeight;
+          return  gettinElement.top < windheight; 
+        } 
+        window.addEventListener('touchmove', () => {
+    
+            const elementTT = document.querySelector('.contact-wraper');
+            const result = distanceBetween(elementTT);
+        console.log(result);
+        if(result){
+            goDownBtn.checked = true; 
+          
+        }else{
+            label[0].classList.remove('btnGoesDown');
+            goDownBtn.checked = false; 
+        }
+        })
+
+
+
+
+
+
+    } );
+
+
+
+   
+
+
+ 
   
 
 
+    
+    
