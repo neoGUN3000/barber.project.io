@@ -127,7 +127,7 @@
     }
     .catalog__section:target .preference li:nth-child(3){
       transform: translateY(0%);
-      transform: translateX(0px);
+      transform: translateX(-20px);
       background-color: transparent;
       border: none;
       color: rgb(182, 182, 182);
