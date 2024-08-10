@@ -508,6 +508,9 @@ color: whitesmoke;
 .recomendation-list{
     display: none;
 }
+.scroller{
+    display: none;
+}
 
 
 
