@@ -27,12 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const windheight = window.innerHeight;
           return  gettinElement.top < windheight; 
         } 
-        window.addEventListener('touchmove', () => {
+        window.addEventListener('touchstart', () => {
     
             const elementTT = document.querySelector('.contact-wraper');
             const result = distanceBetween(elementTT);
         console.log(result);
         if(result){
+            label[0].classList.add('btnGoesDown');
             goDownBtn.checked = true; 
           
         }else{
