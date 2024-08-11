@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    window.location.hash = '#BOOKING'
+    window.location.hash = '#HELP'
 } );
 document.addEventListener('DOMContentLoaded', () => {
     const targetScroll = document.querySelector('.contact-wraper');

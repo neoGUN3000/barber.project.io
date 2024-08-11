@@ -269,7 +269,7 @@
         z-index: 999;
     }
   .btnGoesDown{
-    bottom: -50px;
+    bottom: -120px;
   
   }
 
@@ -293,7 +293,7 @@
 
     .contact-wraper{
         position: absolute;
-        top: 110%;
+        top: 115%;
         width: 100vw;
         border-radius: 0px;
         border: none;
@@ -308,6 +308,7 @@
     .contact{
         border: none;
         margin: auto;
+      
     }
     .contact h2{
         color: rgb(160, 119, 16);
@@ -317,19 +318,24 @@
     .logo {
         display: inline-block;
         z-index: -1;
-      position: absolute;
-      top: 50%;right: 30px;
-      transform: translateY(-30%);
-      
-        
+        position: absolute;
+        bottom: -90%; left: 50%;
+        transform: translateX(-50%);
+        height: 30px;
+        width:max-content;
     }
    .logo h1{
-    position: fixed;
-    font-size: 150px;
-    opacity: .1;
-    letter-spacing: 20px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+
+    transform: scale(1);
+    text-wrap: nowrap;
+    writing-mode: horizontal-tb;
+    font-size: 80px;
+    font-weight: 400;
+    opacity: .3;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 1px goldenrod;
     text-shadow: 10px 10px 10px 10px black;
+   margin: 0%;
    }
     
 .mapsheader{
@@ -337,7 +343,7 @@
     position: absolute;
     color: goldenrod;
     -webkit-text-stroke: 1px black;
-    bottom: -70%;
+    bottom: -65%;
     text-transform: uppercase;
     left: 50%;
     transform: translateX(-50%);
@@ -347,10 +353,10 @@
 
     .map{
         position: absolute;
-        bottom: -90%;
-        height: 100px;   
-       left: 0;
-        width: 100dvw;
+        bottom: -85%;
+        height: 120px;   
+        width: 90dvw;
+        margin: auto;
 
     }
     
