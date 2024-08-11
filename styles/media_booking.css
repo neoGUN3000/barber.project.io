@@ -343,7 +343,7 @@
     position: absolute;
     color: goldenrod;
     -webkit-text-stroke: 1px black;
-    bottom: -65%;
+    bottom: -68%;
     text-transform: uppercase;
     left: 50%;
     transform: translateX(-50%);
@@ -359,7 +359,14 @@
         margin: auto;
 
     }
-    
+   
+    .custom-map__opener{
+       opacity: 0; 
+       z-index: -1;
+    }
+    #map__opener:checked +.map__section >.map >.customo-map__opener::after{
+display: none;
+    }
 
 
 }
