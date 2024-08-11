@@ -367,6 +367,10 @@
     #map__opener:checked +.map__section >.map >.customo-map__opener::after{
 display: none;
     }
-
+    #map__opener:checked + .map__section >.map{
+ 
+        width: 90%;
+       
+    }
 
 }
